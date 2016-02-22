@@ -13,7 +13,7 @@ public class generateStarWarsName
     private String lname;
     private String mname;
     private String town;
-    private boolean check;
+    
 
     /**
      * Constructor for objects of class generateStarWarsName
@@ -21,23 +21,23 @@ public class generateStarWarsName
     public generateStarWarsName(String firstname, String lastname, String mothername, String city)
     {
         // initialise instance variables
-        boolean check = true;
+        
        if(firstname.length()<= 2){
            
            System.out.println("The firstname of " + "  \"" + firstname + "\" " + " should be at least 3 characters");
-           check = false;
+           
        }else if(lastname.length()<= 3){
            
            System.out.println("The lastname of " + "  \"" + lastname + "\" " + " should be at least 4 characters");
-           check = false;
+           
        }else if(mothername.length()<= 2){
            
            System.out.println("The mothername of " + "  \"" + mothername + "\" " + " should be at least 3 characters");
-           check = false;
+           
        }else if(city.length()<=3 ){
            
            System.out.println("The city of " + "  \"" + city + "\" " + " should be at least 4 characters");
-           check = false;
+           
        }else{
            
         
